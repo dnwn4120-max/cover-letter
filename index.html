@@ -8,8 +8,6 @@
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
-/* ─── 인티그레이션 브랜드 컬러 ─── */
-/* 메인: 딥 네이비 #1C1C28  /  포인트: 블루 #3182F6  /  라이트 블루: #EBF3FE */
 --bg:#FAFAFA;
 --bg-card:#FFFFFF;
 --text:#1C1C28;
@@ -34,12 +32,11 @@ overflow-wrap:break-word;
 }
 
 .page{
-max-width:680px;
+max-width:860px;
 margin:0 auto;
-padding:80px 24px 60px;
+padding:80px 48px 60px;
 }
 
-/* header */
 .header{margin-bottom:56px}
 .header-label{
 font-size:12px;
@@ -61,16 +58,15 @@ color:var(--text-sub);
 line-height:1.7;
 }
 
-/* section */
 .section{
 display:flex;
-gap:32px;
+gap:40px;
 padding:48px 0;
 border-top:1px solid var(--border);
 }
 .section-left{
 flex-shrink:0;
-width:130px;
+width:150px;
 padding-top:3px;
 position:sticky;
 top:40px;
@@ -89,12 +85,8 @@ font-weight:600;
 color:var(--accent);
 line-height:1.5;
 }
-.section-body{
-flex:1;
-min-width:0;
-}
+.section-body{flex:1;min-width:0}
 
-/* prose */
 .prose{
 font-size:15px;
 color:var(--text-sub);
@@ -102,17 +94,9 @@ line-height:1.9;
 }
 .prose p{margin-bottom:14px}
 .prose p:last-child{margin-bottom:0}
-.prose .hl{
-color:var(--text);
-font-weight:500;
-}
+.prose .hl{color:var(--text);font-weight:500}
 
-/* metric cards — compact */
-.metrics{
-display:flex;
-gap:10px;
-margin:16px 0;
-}
+.metrics{display:flex;gap:10px;margin:16px 0}
 .metric{
 flex:1;
 background:var(--metric-bg);
@@ -132,7 +116,6 @@ color:var(--accent);
 font-variant-numeric:tabular-nums;
 }
 
-/* badge */
 .badge{
 display:inline-block;
 background:var(--accent-light);
@@ -144,7 +127,6 @@ border-radius:6px;
 margin-bottom:14px;
 }
 
-/* weakness callout */
 .callout{
 margin-top:20px;
 border-left:2px solid var(--accent);
@@ -164,7 +146,6 @@ color:var(--text-sub);
 line-height:1.7;
 }
 
-/* footer */
 .footer{
 border-top:1px solid var(--border);
 padding-top:32px;
@@ -195,8 +176,7 @@ stroke-linecap:round;
 stroke-linejoin:round;
 }
 
-/* responsive */
-@media(max-width:640px){
+@media(max-width:768px){
 .page{padding:48px 20px 40px}
 .section{flex-direction:column;gap:16px}
 .section-left{
@@ -211,7 +191,6 @@ gap:8px;
 .metrics{flex-direction:column}
 }
 
-/* fade-in */
 .section{opacity:0;transform:translateY(16px);animation:fadeUp .5s ease forwards}
 .section:nth-child(2){animation-delay:.1s}
 .section:nth-child(3){animation-delay:.2s}
@@ -223,7 +202,6 @@ gap:8px;
 <body>
 <div class="page">
 
-<!-- Header -->
 <header class="header">
 <p class="header-label">서비스 운영 · IWS 스쿼드 지원</p>
 <h1 class="header-name">강우주</h1>
@@ -293,37 +271,17 @@ gap:8px;
 </section>
 
 <!-- Footer -->
-<!--
-  ✏️ [수정 가이드] 아래 3곳을 본인 정보로 교체하세요:
-
-  1. 이력서 PDF
-     → href="#" 부분을 PDF 파일 링크로 교체
-     → 예: href="https://drive.google.com/file/d/YOUR_FILE_ID/view"
-     → 클릭 시 새 탭에서 PDF가 열립니다
-
-  2. 이메일
-     → href="mailto:" 뒤에 본인 이메일 입력
-     → 텍스트도 이메일 주소로 교체
-     → 예: href="mailto:wooju@email.com"
-     → 클릭 시 기본 메일 앱이 열립니다
-
-  3. 연락처
-     → href="tel:" 뒤에 본인 전화번호 입력
-     → 텍스트도 전화번호로 교체
-     → 예: href="tel:010-1234-5678"
-     → 클릭 시 전화 앱이 열립니다 (모바일)
--->
 <footer class="footer">
 <div class="footer-links">
-<a class="footer-link" href="#" target="_blank">
+<a class="footer-link" href="https://docs.google.com/presentation/d/12ltPXw6H9j1EZGP_G5F6Oiv1oC1PN4jTOQqdCFPasGQ/edit?usp=drive_link" target="_blank">
 <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
-https://docs.google.com/presentation/d/12ltPXw6H9j1EZGP_G5F6Oiv1oC1PN4jTOQqdCFPasGQ/edit?usp=drive_link
+이력서 보기
 </a>
-<a class="footer-link" href="mailto:여기에_이메일_입력">
+<a class="footer-link" href="mailto:dnwn4120@naver.com">
 <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
 dnwn4120@naver.com
 </a>
-<a class="footer-link" href="tel:여기에_전화번호_입력">
+<a class="footer-link" href="tel:010-7253-5250">
 <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
 010-7253-5250
 </a>
