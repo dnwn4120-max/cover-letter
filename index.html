@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>강우주 · 자기소개서</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+/* ─── 인티그레이션 브랜드 컬러 ─── */
+/* 메인: 딥 네이비 #1C1C28  /  포인트: 블루 #3182F6  /  라이트 블루: #EBF3FE */
+--bg:#FAFAFA;
+--bg-card:#FFFFFF;
+--text:#1C1C28;
+--text-sub:#5A5A6A;
+--text-hint:#9A9AA8;
+--accent:#3182F6;
+--accent-dark:#1B64D6;
+--accent-light:#EBF3FE;
+--border:#E5E5EC;
+--metric-bg:#F5F5F8;
+--font:"Pretendard Variable",system-ui,-apple-system,sans-serif;
+}
+html{font-size:16px;scroll-behavior:smooth}
+body{
+font-family:var(--font);
+background:var(--bg);
+color:var(--text);
+line-height:1.8;
+word-break:keep-all;
+overflow-wrap:break-word;
+-webkit-font-smoothing:antialiased;
+}
+
+.page{
+max-width:680px;
+margin:0 auto;
+padding:80px 24px 60px;
+}
+
+/* header */
+.header{margin-bottom:56px}
+.header-label{
+font-size:12px;
+letter-spacing:1.5px;
+color:var(--text-hint);
+text-transform:uppercase;
+margin-bottom:8px;
+}
+.header-name{
+font-size:32px;
+font-weight:600;
+letter-spacing:-0.5px;
+margin-bottom:8px;
+color:var(--text);
+}
+.header-sub{
+font-size:15px;
+color:var(--text-sub);
+line-height:1.7;
+}
+
+/* section */
+.section{
+display:flex;
+gap:32px;
+padding:48px 0;
+border-top:1px solid var(--border);
+}
+.section-left{
+flex-shrink:0;
+width:130px;
+padding-top:3px;
+position:sticky;
+top:40px;
+align-self:flex-start;
+}
+.section-num{
+font-size:11px;
+color:var(--text-hint);
+letter-spacing:0.5px;
+margin-bottom:4px;
+font-variant-numeric:tabular-nums;
+}
+.section-title{
+font-size:14px;
+font-weight:600;
+color:var(--accent);
+line-height:1.5;
+}
+.section-body{
+flex:1;
+min-width:0;
+}
+
+/* prose */
+.prose{
+font-size:15px;
+color:var(--text-sub);
+line-height:1.9;
+}
+.prose p{margin-bottom:14px}
+.prose p:last-child{margin-bottom:0}
+.prose .hl{
+color:var(--text);
+font-weight:500;
+}
+
+/* metric cards — compact */
+.metrics{
+display:flex;
+gap:10px;
+margin:16px 0;
+}
+.metric{
+flex:1;
+background:var(--metric-bg);
+border-radius:8px;
+padding:10px 14px;
+}
+.metric-label{
+font-size:11px;
+color:var(--text-hint);
+letter-spacing:0.3px;
+margin-bottom:3px;
+}
+.metric-value{
+font-size:17px;
+font-weight:600;
+color:var(--accent);
+font-variant-numeric:tabular-nums;
+}
+
+/* badge */
+.badge{
+display:inline-block;
+background:var(--accent-light);
+color:var(--accent-dark);
+font-size:12px;
+font-weight:500;
+padding:4px 12px;
+border-radius:6px;
+margin-bottom:14px;
+}
+
+/* weakness callout */
+.callout{
+margin-top:20px;
+border-left:2px solid var(--accent);
+padding-left:16px;
+border-radius:0;
+}
+.callout-label{
+font-size:12px;
+font-weight:600;
+color:var(--accent);
+letter-spacing:0.3px;
+margin-bottom:4px;
+}
+.callout p{
+font-size:14px;
+color:var(--text-sub);
+line-height:1.7;
+}
+
+/* footer */
+.footer{
+border-top:1px solid var(--border);
+padding-top:32px;
+margin-top:8px;
+text-align:center;
+}
+.footer-links{
+display:flex;
+justify-content:center;
+gap:24px;
+flex-wrap:wrap;
+}
+.footer-link{
+font-size:13px;
+color:var(--text-hint);
+text-decoration:none;
+transition:color 0.2s;
+}
+.footer-link:hover{color:var(--accent)}
+.footer-link svg{
+width:14px;height:14px;
+vertical-align:-2px;
+margin-right:4px;
+stroke:currentColor;
+fill:none;
+stroke-width:2;
+stroke-linecap:round;
+stroke-linejoin:round;
+}
+
+/* responsive */
+@media(max-width:640px){
+.page{padding:48px 20px 40px}
+.section{flex-direction:column;gap:16px}
+.section-left{
+width:100%;
+position:static;
+display:flex;
+align-items:baseline;
+gap:8px;
+}
+.section-num{margin-bottom:0}
+.header-name{font-size:26px}
+.metrics{flex-direction:column}
+}
+
+/* fade-in */
+.section{opacity:0;transform:translateY(16px);animation:fadeUp .5s ease forwards}
+.section:nth-child(2){animation-delay:.1s}
+.section:nth-child(3){animation-delay:.2s}
+.section:nth-child(4){animation-delay:.3s}
+.section:nth-child(5){animation-delay:.4s}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- Header -->
+<header class="header">
+<p class="header-label">서비스 운영 · IWS 스쿼드 지원</p>
+<h1 class="header-name">강우주</h1>
+<p class="header-sub">서비스 초기부터 참여하여, 온보딩 설계 및 프로세스 개선을 통해 운영을 고도화했습니다.</p>
+</header>
+
+<!-- 01 지원 동기 & 입사 후 포부 -->
+<section class="section">
+<div class="section-left">
+<p class="section-num">01</p>
+<p class="section-title">지원 동기 &<br>입사 후 포부</p>
+</div>
+<div class="section-body prose">
+<p>서비스 운영의 본질은 고객이 서비스를 처음 접한 시점부터 목표를 달성할 때까지의 여정을 설계하고, 고객 경험을 지속적으로 향상시키는 데 있다고 생각합니다.</p>
+<p>그래서 고객의 문의에 단순 응답하거나 이슈를 해결하는 데 그치지 않고, 고객의 서비스 이용을 방해하는 지점을 <span class="hl">데이터로 찾고 개선</span>해왔습니다.</p>
+<p>온라인 교육 플랫폼을 운영하며, 학습 초기 구간의 고객 이탈을 발견했고 학습 전/후 2주 온보딩 체계를 설계해 <span class="hl">수강 취소율을 20% 개선</span>했습니다. 또한 서비스 이용률을 모니터링하며 실시간 수업 1회 미참여가 연속 결석으로 이어지는 패턴을 확인하여, 다시보기 체계를 수립해 실시간이라는 제약을 완화하고 고객이 학습 과정에 다시 유입될 수 있도록 했습니다.</p>
+<p>인티그레이션의 한의원 홈페이지 빌더는, 정보 전달에 머물던 병원 홈페이지를 <span class="hl">'환자 유입→상담→결제'로 이어지는 매출 도구</span>로 바꾸는 서비스로 이해했습니다. 제가 체득한 운영 경험과 인사이트를 바탕으로, 서비스 도입부터 첫 매출까지의 여정에서 고객과 함께하며 성장을 지원하고 싶습니다.</p>
+</div>
+</section>
+
+<!-- 02 경력사항 -->
+<section class="section">
+<div class="section-left">
+<p class="section-num">02</p>
+<p class="section-title">경력사항</p>
+</div>
+<div class="section-body prose">
+<span class="badge">핵심 프로젝트 · 고객 온보딩 체계 설계</span>
+<p>bluetiger(블루타이거)에서 온라인 클래스를 운영하며, 고객이 초기 학습 행동 구간에서 이탈하는 문제를 해결하여 초기 이탈을 완화했습니다.</p>
+<p>당시 클래스 시작 직후부터 2주까지, 첫 과제를 1회도 진행하지 않은 수강생이 전체의 15%로 심각한 수준이었습니다. 특히 핵심 기능 별로 서로 다른 프로그램을 사용하고 있어, 고객이 학습 흐름과 서비스 이용 절차를 이해하지 못하는 상황이 반복되고 있었습니다. 이로 인해 결제 후 학습으로 이어지지 못하고, <span class="hl">중도 이탈 및 환불로 이어질 가능성이 높다</span>고 판단했습니다.</p>
+<p>담당자로서 해당 현상을 단순 이슈가 아닌 <span class="hl">온보딩 체계의 문제로 인식</span>하고, 이용률 데이터와 VOC를 기반으로 원인을 정의했습니다. 초기 2주 데이터를 분석한 결과, 서비스 이용 방법 관련 문의가 전체의 61%를 차지하고 있음을 발견했습니다.</p>
+<p>이후 핵심 행동을 이행하지 않는 원인을 기능 난이도, 이용 의지, 서비스 이용 시점과 절차 이해도로 구분했습니다. 그 결과 난이도나 의지보다는, <span class="hl">고객이 언제 무엇을 해야 하는지 알지 못하는 점</span>이 핵심 원인임을 도출했고, 기존의 일회성 안내 방식으로는 고객이 서비스를 제대로 이해하기 어렵다고 판단했습니다.</p>
+<p>이에 고객이 실제로 학습하는 흐름을 기준으로 온보딩 체계를 설계하고, 행동 시점에 맞춰 필요한 정보를 단계적으로 제공하도록 개선했습니다.</p>
+
+<div class="metrics">
+<div class="metric">
+<p class="metric-label">초기 이탈률 개선</p>
+<p class="metric-value">61%</p>
+</div>
+<div class="metric">
+<p class="metric-label">환불률 개선</p>
+<p class="metric-value">20%</p>
+</div>
+</div>
+
+<p>고객 여정에 맞춘 가이드를 적용한 결과, 서비스 오픈 초기 2주차 누적 이탈율을 61% 개선하고 환불율 또한 20% 완화하는 성과를 달성했습니다.</p>
+<p>이러한 경험을 바탕으로, 인티그레이션에서도 홈페이지 도입 후 고객이 첫 성과를 내기까지의 전환 과정을 안정화하는 데 기여하고 싶습니다.</p>
+</div>
+</section>
+
+<!-- 03 강점-약점 -->
+<section class="section">
+<div class="section-left">
+<p class="section-num">03</p>
+<p class="section-title">강점-약점</p>
+</div>
+<div class="section-body prose">
+<p>서비스 운영 직무에서 가장 중요한 역량은, 반복되는 문제에서 <span class="hl">핵심 원인을 찾아 개선</span>하는 데 있다고 생각합니다.</p>
+<p>운영 과정에서 비효율을 발견하면 데이터를 분석하여, 가장 우선으로 해결해야 하는 원인을 찾아 해결해왔습니다.</p>
+<p>교육 서비스를 운영할 당시 고객과 멘토 강사의 규모가 1.5배 증가하면서, 기존의 1:1 강사 온보딩 방식이 클래스 운영 과정 전체에 병목을 발생시키고 있었습니다. 이를 <span class="hl">운영 구조의 문제로 판단</span>하여 강사용 온보딩 자료 및 안내 체계를 표준화했습니다. 또한 모든 신규 강사를 대상으로 개별 진행되고 있던 교육 미팅을 단체 세션으로 전환해 <span class="hl">리드타임을 47% 단축</span>했습니다.</p>
+
+<div class="callout">
+<p class="callout-label">보완점</p>
+<p>반면, 우선순위가 낮다고 판단한 업무의 일정이 지연되는 경험이 있었습니다. 이를 인식한 뒤 Notion 데이터베이스로 프로젝트성 업무와 루틴 업무를 구분해 매일 to-do list를 관리했으며, 캘린더와 연동해 누락되는 업무가 없도록 살피고 있습니다.</p>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<!--
+  ✏️ [수정 가이드] 아래 3곳을 본인 정보로 교체하세요:
+
+  1. 이력서 PDF
+     → href="#" 부분을 PDF 파일 링크로 교체
+     → 예: href="https://drive.google.com/file/d/YOUR_FILE_ID/view"
+     → 클릭 시 새 탭에서 PDF가 열립니다
+
+  2. 이메일
+     → href="mailto:" 뒤에 본인 이메일 입력
+     → 텍스트도 이메일 주소로 교체
+     → 예: href="mailto:wooju@email.com"
+     → 클릭 시 기본 메일 앱이 열립니다
+
+  3. 연락처
+     → href="tel:" 뒤에 본인 전화번호 입력
+     → 텍스트도 전화번호로 교체
+     → 예: href="tel:010-1234-5678"
+     → 클릭 시 전화 앱이 열립니다 (모바일)
+-->
+<footer class="footer">
+<div class="footer-links">
+<a class="footer-link" href="#" target="_blank">
+<svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+이력서 PDF
+</a>
+<a class="footer-link" href="mailto:여기에_이메일_입력">
+<svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+여기에_이메일_입력
+</a>
+<a class="footer-link" href="tel:여기에_전화번호_입력">
+<svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+여기에_전화번호_입력
+</a>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
